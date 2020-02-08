@@ -74,7 +74,6 @@
   &__heading {
     align-items: center;
     justify-content: space-between;
-    //width: 58%;
     margin: 0 auto 8px;
   }
   &__logo {
@@ -131,6 +130,7 @@
     background-size: cover;
     padding: 40px 0 150px;
     text-align: center;
+    background-position: center;
   }
   &__subtitle {
     color: #4e4e4e;
@@ -167,6 +167,7 @@
 .accept {
   background: url("../../img/bg-accept.png") no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 55px 0 15px;
   &__title {
@@ -375,6 +376,7 @@
   padding: 64px 0 150px;
   background: url("../../img/bg_work.png") no-repeat;
   background-size: cover;
+  background-position: center;
   &__title {
     margin-bottom: 37px;
   }
@@ -459,4 +461,145 @@
 
 .footer {
   padding: 4px 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .header__title {
+    font-size: 40px;
+
+  }
+
+  .content-subtitle {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .header__paragraph {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header__call {
+    padding: 13px;
+  }
+
+  .header__title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .content-subtitle {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .invite__list {
+    flex-wrap: wrap;
+  }
+  .invite__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .invite__paragraph {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .content-button {
+    font-size: 16px;
+  }
+
+  .header__item {
+    padding: 0 20px;
+  }
+
+  .header__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+
+  }
+
+  .header__paragraph {
+    margin-bottom: 25px;
+  }
+
+  .header__wrapper {
+
+    padding: 40px 0 90px;
+
+  }
+
+  .header__call {
+    padding: 13px 5px;
+  }
+
+  .header__phone {
+    font-size: 14px;
+  }
+
+  .header__subtitle {
+    margin-bottom: 25px;
+  }
+  .invite__paragraph {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .invite__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__phone span {
+    display: none;
+  }
+
+  .header__call {
+    padding: 5px 5px;
+  }
+
+  .content-button {
+    font-size: 10px;
+    padding: 5px 2%;
+  }
+
+  .header__icon {
+    margin: 0;
+  }
+
+  .header__logo {
+    width: 37%;
+  }
+
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__item:after {
+    display: none;
+  }
+
+  .content-subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .header__title {
+    line-height: 27px;
+  }
+
+  .header__title--inner,
+  .header__title--color {
+    padding: 0;
+    display: block;
+  }
+  .invite__paragraph {
+    font-size: 16px;
+  }
 }
