@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>ВторStore</title>
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="style/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link href="style/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -14,21 +16,22 @@
     <div class="content-container">
         <div class="header__heading  content-row">
             <a href="#" class="header__logo"><img src="img/logo.png" alt="Logo" class="content-image"></a>
-            <a href="#" class="header__phone content-row"><img src="img/phone.svg" alt="Phone" class="header__icon">
+            <a href="tel:81234567890" class="header__phone content-row"><img src="img/phone.svg" alt="Phone"
+                                                                             class="header__icon">
                 <span>8 (123) 456-78-90</span></a>
-            <a href="#" class="content-button header__call ">Обратный звонок</a>
+            <button class="content-button header__call ">Обратный звонок</button>
         </div>
     </div>
     <div class="header__wrap">
         <ul class="header__nav content-row">
             <li class="header__item">
-                <a href="#" class="header__link">Вывоз вторсырья </a>
+                <a href="#accept" class="header__link">Вывоз вторсырья </a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Отзывы</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Как мы работаем</a>
+                <a href="#work" class="header__link">Как мы работаем</a>
             </li>
         </ul>
 
@@ -45,7 +48,7 @@
 
     </div>
 </header>
-<section class="accept">
+<section class="accept" id="accept">
     <div class="content-container">
         <h2 class="content-subtitle accept__title">Мы принимаем</h2>
         <ul class="content-row accept__list">
@@ -156,7 +159,57 @@
         </ul>
         <p class="invite__text">Вы решаете куда попадет Ваш мусор, но сдавать его нам на переработку,
             будет лучший вклад в окружающую среду, который Вы можете вносить каждый день</p>
-        <button class="content-button invite__button">Анкета для юридических лиц</button>
+        <a id="inline" href="#modal1" class="content-button invite__button">Анкета для юридических лиц</a>
+        <div class="invite__wrap">
+            <div class="invite__modal" id="modal1">
+                <h3 class="invite__subtitle">Анкета<br>
+                    для юридических лиц</h3>
+                <form class="invite__form">
+                    <ul class="invite__roster">
+                        <li>
+                            <label class="invite__label">Укажите ваш город</label>
+                            <input class="invite__input" type="text">
+                        </li>
+                        <li>
+                            <label class="invite__label"> Название вашей организации</label>
+                            <input class="invite__input" type="text">
+                        </li>
+                        <li>
+                            <label class="invite__label">Укажите ваш точный адрес</label>
+                            <input class="invite__input" type="text">
+                        </li>
+                        <li>
+                            <label class="invite__label">Укажите ваш email</label>
+                            <input class="invite__input" type="email">
+                        </li>
+                        <li>
+                            <label class="invite__label">Ваш контактный телефон</label>
+                            <input class="invite__input" type="tel">
+                        </li>
+                        <li>
+                            <label class="invite__label">Работая с ВторStore, вам необходимо накапливать
+                                вторсырье. Нам экономически невыгодно ехать за двумя
+                                ПЭТ - бутылками. Мы забираем вторсырье (кроме картона)
+                                в сверхпрочных мешках (120-300 кг). Сколько мешков
+                                по 30-40 кг вы можете накапливать за неделю?</label>
+                            <input class="invite__input" type="text">
+                        </li>
+                        <li>
+                            <label class="invite__label">Выбирая между высокой ценой за вторсырье
+                                и частым вывозом, что для вас важнее?</label>
+                            <input class="invite__input" type="text">
+                        </li>
+                    </ul>
+                    <a   class="content-button invite__send">Отправить заявку</a>
+                </form>
+            </div>
+        </div>
+        <!--<div class="invite__wrap">-->
+            <!--<div class="" id="modal2">-->
+                <!--<p>jfdhvrbgkjn djf,</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
 
     </div>
 </section>
@@ -191,7 +244,7 @@
         </ul>
     </div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="content-container">
         <h2 class="content-subtitle reviews__title">О нас говорят:</h2>
         <div class="">
@@ -266,7 +319,7 @@
         </div>
     </div>
 </section>
-<section class="work">
+<section class="work" id="work">
     <div class="content-container">
         <h2 class="content-subtitle work__title">Как мы работаем</h2>
         <ul class="content-row work__list">
@@ -320,21 +373,22 @@
     <div class="content-container">
         <div class="header__heading  content-row">
             <a href="#" class="header__logo"><img src="img/logo.png" alt="Logo" class="content-image"></a>
-            <a href="#" class="header__phone content-row"><img src="img/phone.svg" alt="Phone" class="header__icon">
+            <a href="tel:81234567890" class="header__phone content-row"><img src="img/phone.svg" alt="Phone"
+                                                                             class="header__icon">
                 <span>8 (123) 456-78-90</span></a>
-            <a href="#" class="content-button header__call ">Обратный звонок</a>
+            <button class="content-button header__call ">Обратный звонок</button>
         </div>
     </div>
     <div class="header__wrap">
         <ul class="header__nav content-row">
             <li class="header__item">
-                <a href="#" class="header__link">Вывоз вторсырья </a>
+                <a href="#accept" class="header__link">Вывоз вторсырья </a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Отзывы</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Как мы работаем</a>
+                <a href="#work" class="header__link">Как мы работаем</a>
             </li>
         </ul>
 
@@ -342,6 +396,7 @@
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 </body>

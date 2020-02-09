@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $('.header__link').click(function () {
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+        return false;
+    });
+    $(".invite__button").fancybox();
+    function open() {
+        $(".invite__send").fancybox.close();
+    }
+    setTimeout(open, 0);
     //initialize swiper when document ready
     var mySwiper = new Swiper('.reviews__slider.swiper-container', {
         // Optional parameters

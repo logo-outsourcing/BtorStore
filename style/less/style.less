@@ -51,6 +51,16 @@
   border: none;
   padding: 14px 3%;
   cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 0 10px 0 #e50303;
+    outline: none;
+  }
+  &:active,
+  &:focus,
+  &:visited {
+    outline: none;
+  }
 }
 
 .content-subtitle {
@@ -87,6 +97,9 @@
     color: #4e4e4e;
     text-decoration: none;
     align-items: center;
+    &:hover {
+      color: #1d9942;
+    }
   }
   &__icon {
     margin-right: 5px;
@@ -124,6 +137,9 @@
     font-weight: 400;
     color: #fef5e3;
     text-decoration: none;
+    &:hover {
+      color: #4e4e4e;
+    }
   }
   &__wrapper {
     background: url("../../img/bg_header.png") no-repeat;
@@ -266,8 +282,72 @@
   &__button {
     padding: 14px 2%;
   }
-}
+  &__wrap {
+    display: none;
+  }
+  &__modal {
+    background-color: #fef5e3;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    max-width: 761px;
+  }
+  &__subtitle {
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1d9942;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__form {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__roster {
+    list-style: decimal;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #4e4e4e;
+    list-style-position: inside;
+    margin-bottom: 30px;
+  }
+  &__label {
+    font-family: 'Gotham Pro Regular', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #4e4e4e;
+    display: inline;
+    margin-left: 20px;
 
+  }
+  &__input {
+    height: 43px;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 15px;
+  }
+  &__send{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 70%;
+  }
+}
+.fancybox-slide--html  .fancybox-close-small{
+  background: url("../../img/close.svg") no-repeat;
+   top: 7px;
+}
+.fancybox-close-small svg{
+ display: none;
+}
 .wherefore {
   background-color: #fef5e3;
   padding: 55px 0;
