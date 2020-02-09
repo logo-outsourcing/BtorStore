@@ -334,20 +334,39 @@
     margin-top: 6px;
     margin-bottom: 15px;
   }
-  &__send{
+  &__send {
     margin: 0 auto;
     display: block;
     text-align: center;
     width: 70%;
   }
+  &__thank {
+    background-color: #fef5e3;
+    max-width: 761px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+  }
+  &__info {
+    font-family: 'Gotham Pro Regular', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #4e4e4e;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
-.fancybox-slide--html  .fancybox-close-small{
+
+.fancybox-slide--html .fancybox-close-small {
   background: url("../../img/close.svg") no-repeat;
-   top: 7px;
+  top: 7px;
 }
-.fancybox-close-small svg{
- display: none;
+
+.fancybox-close-small svg {
+  display: none;
 }
+
 .wherefore {
   background-color: #fef5e3;
   padding: 55px 0;
@@ -671,10 +690,6 @@
     padding: 13px 5px;
   }
 
-  .header__phone {
-    font-size: 14px;
-  }
-
   .header__subtitle {
     margin-bottom: 25px;
   }
@@ -722,26 +737,38 @@
   .accept__list {
     justify-content: flex-start;
   }
-}
 
-@media screen and (max-width: 576px) {
+  .invite__modal {
+    padding: 35px 15px;
+    max-width: 450px;
+  }
+
+  .invite__thank {
+    max-width: 450px;
+    padding: 35px 50px;
+  }
+
+  .invite__subtitle {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .invite__label {
+    font-size: 15px;
+  }
+
+  .invite__form {
+    width: 100%;
+  }
+
+  .invite__info {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
   .header__heading {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .header__call {
-    padding: 5px 5px;
-  }
-
-  .content-button {
-    font-size: 10px;
-    padding: 5px 1%;
-  }
-
-  .header__icon {
-    margin: 0;
   }
 
   .header__logo {
@@ -751,7 +778,32 @@
   }
 
   .header__phone {
+    margin-right: 10px;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .header__phone {
+    font-size: 14px;
+  }
+
+  .header__logo {
+    width: 80%;
+    margin: 0 0 10px;
+  }
+
+  .header__call {
+    padding: 5px 5px;
+  }
+
+  .content-button {
+    font-size: 14px;
+  }
+
+  .header__icon {
+    margin: 0;
   }
 
   .header__nav {
@@ -792,6 +844,10 @@
 
   .invite__item {
     width: 100%;
+  }
+
+  .invite__label {
+    margin-left: 0;
   }
 
   .wherefore__paragraph {
@@ -889,5 +945,14 @@
   .work__item {
     margin-bottom: 25px;
     width: 100%;
+  }
+
+  .invite__modal {
+    max-width: 320px;
+  }
+
+  .invite__thank {
+    padding: 35px 15px;
+    max-width: 320px;
   }
 }
