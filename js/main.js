@@ -13,7 +13,9 @@ $(document).ready(function () {
     $(".invite__button").fancybox();
 
     //Close modal window
-
+    $('.invite__close').on('click',function open () {
+        $.fancybox.close();
+    });
     $('.invite__send').on('click',function open () {
         $.fancybox.close();
     });

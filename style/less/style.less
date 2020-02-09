@@ -356,14 +356,25 @@
     margin: 0 auto;
     text-align: center;
   }
+  &__close {
+    background: url("../../img/close.svg") no-repeat;
+    top: 7px;
+    right: 0;
+    padding: 10px;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: none;
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
-.fancybox-slide--html .fancybox-close-small {
-  background: url("../../img/close.svg") no-repeat;
-  top: 7px;
-}
-
-.fancybox-close-small svg {
+.fancybox-close-small {
   display: none;
 }
 
@@ -794,7 +805,6 @@
     margin: 0 0 10px;
   }
 
-
   .content-button {
     font-size: 14px;
     padding: 5px 3%;
@@ -803,6 +813,7 @@
   .header__call {
     padding: 5px 5px;
   }
+
   .header__icon {
     margin: 0;
   }
@@ -956,14 +967,8 @@
     padding: 35px 10px;
     max-width: 320px;
   }
+
   .invite__info {
     width: 85%;
-  }
-  .fancybox-slide--html .fancybox-close-small {
-    background: none;
-  }
-
-  .fancybox-close-small svg {
-    display: block;
   }
 }
