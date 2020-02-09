@@ -479,6 +479,15 @@
     font-size: 25px;
     line-height: 25px;
   }
+
+  .accept__info {
+    font-size: 14px;
+  }
+
+  .accept__icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -499,12 +508,55 @@
   .invite__list {
     flex-wrap: wrap;
   }
+
   .invite__item {
     width: 50%;
     margin-bottom: 30px;
   }
+
   .invite__paragraph {
     font-size: 26px;
+  }
+
+  .wherefore__paragraph {
+    font-size: 20px;
+  }
+
+  .wherefore__info {
+    font-size: 13px;
+  }
+
+  .wherefore__item {
+    width: 49%;
+  }
+
+  .work__info {
+    padding: 0;
+    font-size: 17px;
+  }
+
+  .work__name {
+    min-height: 54px;
+  }
+
+  .work__icon {
+    width: 119px;
+    height: 119px;
+  }
+
+  .work__item--bottom:after,
+  .work__item--top:after {
+    right: -25px;
+  }
+
+  .accept__list {
+    flex-wrap: wrap;
+  }
+
+  .accept__item {
+    width: 22%;
+    margin-bottom: 40px;
+    margin-right: 0;
   }
 }
 
@@ -546,18 +598,57 @@
   .header__subtitle {
     margin-bottom: 25px;
   }
+
   .invite__paragraph {
     font-size: 25px;
     line-height: 25px;
   }
-  .invite__name {
+
+  .invite__name,
+  .invite__text {
     font-size: 16px;
+  }
+
+  .wherefore__item {
+    width: 100%;
+  }
+
+  .work__list {
+    flex-wrap: wrap;
+  }
+
+  .work__item {
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  .work__item--bottom:after,
+  .work__item--top:after {
+    display: none;
+  }
+
+  .work__name br {
+    display: none;
+  }
+
+  .work__name {
+    min-height: 36px;
+  }
+
+  .accept__item {
+    width: 49%;
+  }
+
+  .accept__list {
+    justify-content: flex-start;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .header__phone span {
-    display: none;
+
+  .header__heading {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .header__call {
@@ -566,7 +657,7 @@
 
   .content-button {
     font-size: 10px;
-    padding: 5px 2%;
+    padding: 5px 1%;
   }
 
   .header__icon {
@@ -575,6 +666,12 @@
 
   .header__logo {
     width: 37%;
+    margin: 0 3% 10px 0;
+
+  }
+
+  .header__phone {
+    margin-bottom: 10px;
   }
 
   .header__nav {
@@ -590,6 +687,10 @@
     line-height: 25px;
   }
 
+  .header__wrapper {
+    padding: 20px 0 90px;
+  }
+
   .header__title {
     line-height: 27px;
   }
@@ -599,7 +700,114 @@
     padding: 0;
     display: block;
   }
+
   .invite__paragraph {
     font-size: 16px;
+  }
+
+  .invite__name,
+  .invite__text {
+    font-size: 14px;
+  }
+
+  .invite__item {
+    width: 100%;
+  }
+
+  .wherefore__paragraph {
+    font-size: 16px;
+  }
+
+  .work__name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .work__info {
+    font-size: 14px;
+    padding: 0 16%;
+  }
+
+  .work__list {
+    margin-bottom: 0;
+  }
+
+  .accept__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .accept {
+    padding: 15px 0;
+  }
+
+  .invite__title {
+    margin-bottom: 20px;
+  }
+
+  .invite__icon {
+    margin: 0 auto 15px;
+  }
+
+  .invite__item {
+    margin-bottom: 25px;
+  }
+
+  .invite__list {
+    margin-bottom: 0;
+  }
+
+  .invite__text {
+    padding: 0 2%;
+    margin-bottom: 25px;
+  }
+
+  .invite {
+    padding: 25px 0;
+  }
+
+  .wherefore__paragraph--inner {
+    display: inline;
+  }
+
+  .wherefore__paragraph {
+    margin-bottom: 25px;
+  }
+
+  .wherefore__item {
+    margin-bottom: 25px;
+  }
+
+  .wherefore {
+    padding: 25px 0;
+  }
+
+  .reviews {
+    padding: 25px 0;
+  }
+
+  .reviews__element {
+    padding: 30px 7% 30px;
+  }
+
+  .reviews__icon {
+    margin-bottom: 15px;
+  }
+
+  .reviews__city {
+    margin-bottom: 15px;
+  }
+
+  .work {
+    padding: 25px 0 253px;
+  }
+
+  .work__title {
+    margin-bottom: 25px;
+  }
+
+  .work__item {
+    margin-bottom: 25px;
+    width: 100%;
   }
 }
