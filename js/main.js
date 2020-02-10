@@ -19,10 +19,16 @@ $(document).ready(function () {
     $('.invite__send').on('click',function open () {
         $.fancybox.close();
     });
-
+    $('.header__send').on('click',function open () {
+        $.fancybox.close();
+    });
     //Open modal-thank window
 
     $(".invite__send").fancybox();
+
+    //Open call modal
+
+    $('.header__call').fancybox();
 
     //initialize swiper when document ready
 
